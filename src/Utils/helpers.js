@@ -25,3 +25,16 @@ function getJson(){
     });
 }
 export {getJson}
+
+
+function getMd(add){
+  let address=`https://raw.githubusercontent.com/songyingli/demodata/master/blog/${add}.md`
+  return axios.get(address)
+    .then((res) => ({
+      getMd:res.data
+    }))
+    .catch(function (error) {
+      alert(error);
+    });
+}
+export {getMd}
