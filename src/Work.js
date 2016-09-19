@@ -30,7 +30,7 @@ class Work extends React.Component {
         data:recData.getJson,
         wait:false
       })
-      console.log(this.state.data)
+    //  console.log(this.state.data)
     });
   }
 
